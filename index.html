@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<body>
+    <main class="main-container">
+
+<header class="input-container">
+    <input class="city-input" type="text" placeholder="search city">
+    <button class="search-button">
+<span class="fa-solid fa-magnifying-glass"></span>
+    </button>
+   
+</header>
+<section class="weather-info" >
+    <div class="location-date">
+        <div class="location">
+        <span class="fa-solid fa-location-dot"></span>
+        <h4 class="country-txt  regular-txt">
+            India
+        </h4>
+        </div>
+        <h5 class="current-date">
+            Monday ,30
+        </h5>
+    </div>
+
+<div class="weather-summary-container">
+    <img src="assets/weather/clouds.svg" class="weather-summary-img">
+    <div class="weather-summ-info">
+<h1 class="temp-text">
+    20°C
+</h1>
+<h3 class="condition-txt  regular-txt">Cloudy</h3>
+    </div>
+</div>
+<div class="weather-condition">
+    <div class="condition-item">
+        <span class="fa-solid fa-droplet"></span>
+        <div class="condition-info">
+            <h5 class="regular-txt">Humidity</h5>
+            <h5 class="humidity-value">55%</h5>
+        </div>
+    </div>
+   
+    <div class="condition-item">
+     <span class="fa-solid fa-wind"></span>
+        <div class="condition-info">
+            <h5 class="regular-txt" id="air">Wind</h5>
+            <h5 class="wind-value">12km/h</h5>
+        </div>
+    </div>
+</div>
+
+
+<div class="forcast-item-container">
+    <div class="forecast-item">
+        <h5 class="forecast-item-date  regular-txt">
+            30-May
+        </h5>
+        <img src="assets/weather/thunderstorm.svg" alt="" class="forecast-item-img">
+        <h5 class="forecast-item-temp">29°C</h5>
+    </div>
+     <div class="forecast-item">
+        <h5 class="forecast-item-date  regular-txt">
+            30-May
+        </h5>
+        <img src="assets/weather/thunderstorm.svg" alt="" class="forecast-item-img">
+        <h5 class="forecast-item-temp">29°C</h5>
+    </div>
+     <div class="forecast-item">
+        <h5 class="forecast-item-date  regular-txt">
+            30-May
+        </h5>
+        <img src="assets/weather/thunderstorm.svg" alt="" class="forecast-item-img">
+        <h5 class="forecast-item-temp">29°C</h5>
+    </div>
+     <div class="forecast-item">
+        <h5 class="forecast-item-date  regular-txt">
+            30-May
+        </h5>
+        <img src="assets/weather/thunderstorm.svg" alt="" class="forecast-item-img">
+        <h5 class="forecast-item-temp">29°C</h5>
+    </div>
+</div>
+</section>
+
+<section class="search-city section-message">
+    <img src="assets/message/search-city.png"/>
+    <div>
+        <h1> Search City</h1>
+        <h4 class="regular-txt">
+            Find out Weather condition
+        </h4>
+    </div>
+</section>
+
+<section class="not-found section-message" >
+    <img src="assets/message/not-found.png"/>
+    <div>
+        <h1> Search City</h1>
+        <h4 class="regular-txt">
+            Find out Weather condition
+        </h4>
+    </div>
+</section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
