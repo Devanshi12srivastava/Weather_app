@@ -11,12 +11,13 @@ const windTxt=document.querySelector(".wind-value");
 const weatherSummaryImg=document.querySelector(".weather-summary-img");
 const currentDataTxt=document.querySelector(".current-date");
 const forecastItemConatiner=document.querySelector(".forcast-item-container");
+const icon=document.getElementById("icon");
 
 const apiKey="b68935896127b56ae57369e9631c4cdd";
 
 searchBtn.addEventListener("click",()=>{
     if(cityInput.value.trim() !=''){
-        updateWeatherInfo(cityInput.value);
+        updateWeatherInfo(cityInput.value); 
     console.log(cityInput.value);
     cityInput.value=''
     cityInput.blur();
@@ -63,7 +64,6 @@ function getCurrentDate(){
 async function updateWeatherInfo(city){
     const Weatherdata= await getFetchData('weather',city);
      
-
       if(Weatherdata.cod=='404'){
         showDispalySection(notFoundsection)
         return
@@ -77,6 +77,7 @@ async function updateWeatherInfo(city){
 
 
        }=Weatherdata
+
        countryTxt.textContent = country;
        tempTxt.textContent=Math.round(temp)+'°C';
        humidityTxt.textContent=humidity+'%';
@@ -137,4 +138,13 @@ function showDispalySection(section){
 
     section.style.display='block';
 }
+icon.onclick =function(){
+    document.body.classList.toggle("darktheme");
+}
+const video = document.getElementById("bgVideo");
 
+// Play video
+// video.play();
+
+// Pause video
+// video.pause();

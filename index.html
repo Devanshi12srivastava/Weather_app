@@ -8,19 +8,25 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 <body>
+   
     <main class="main-container">
 
+ <!-- <video id="bgVideo" autoplay muted loop playsinline>
+  <source src="rainy.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video> -->
 <header class="input-container">
     <input class="city-input" type="text" placeholder="search city">
     <button class="search-button">
-<span class="fa-solid fa-magnifying-glass"></span>
+<span class="fa-solid fa-magnifying-glass" id="icon1"></span>
     </button>
-   
+   <button class="theme" id="icon">Theme</button>
 </header>
 <section class="weather-info" >
+    
     <div class="location-date">
         <div class="location">
-        <span class="fa-solid fa-location-dot"></span>
+        <span class="fa-solid fa-location-dot" id="loca"></span>
         <h4 class="country-txt  regular-txt">
             India
         </h4>
@@ -93,7 +99,7 @@
 <section class="search-city section-message">
     <img src="assets/message/search-city.png"/>
     <div>
-        <h1> Search City</h1>
+        <h1 class="tag"> Search City</h1>
         <h4 class="regular-txt">
             Find out Weather condition
         </h4>
