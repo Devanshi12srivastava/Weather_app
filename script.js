@@ -141,10 +141,19 @@ function showDispalySection(section){
 icon.onclick =function(){
     document.body.classList.toggle("darktheme");
 }
-const video = document.getElementById("bgVideo");
 
-// Play video
-// video.play();
 
-// Pause video
-// video.pause();
+const button=document.querySelector(".btn");
+
+function fetchLocation(position){
+console.log(position.coords.latitude);
+};
+
+function getLocation() {
+ console.log("error");
+}
+
+
+button.addEventListener("click",async ()=>{
+    navigator.geolocation.getCurrentPosition( fetchLocation,getLocation);
+});
